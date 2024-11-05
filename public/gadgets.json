@@ -1,0 +1,203 @@
+[
+    {
+        "product_id": 1,
+        "product_title": "MacBook Air M2",
+        "product_image": "https://example.com/macbookairm2.jpg",
+        "category": "Laptop",
+        "price": 1199,
+        "description": "Lightweight laptop with M2 chip and all-day battery life.",
+        "specification": {
+            "Display": "13.6-inch Retina",
+            "Processor": "M2",
+            "RAM": "8GB",
+            "Storage": "256GB SSD",
+            "Battery Life": "Up to 18 hours"
+        },
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 2,
+        "product_title": "Dell Inspiron 15",
+        "product_image": "https://example.com/dellinspiron15.jpg",
+        "category": "Laptop",
+        "price": 599,
+        "description": "Affordable laptop with solid performance for everyday use.",
+        "specification": {
+            "Display": "15.6-inch FHD",
+            "Processor": "Intel Core i5",
+            "RAM": "8GB",
+            "Storage": "512GB SSD",
+            "Battery Life": "Up to 7 hours"
+        },
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": 3,
+        "product_title": "HP Spectre x360",
+        "product_image": "https://example.com/hpspectrex360.jpg",
+        "category": "Laptop",
+        "price": 1399,
+        "description": "Convertible laptop with a sleek design and excellent battery life.",
+        "specification": {
+            "Display": "13.3-inch 4K OLED",
+            "Processor": "Intel Core i7",
+            "RAM": "16GB",
+            "Storage": "1TB SSD",
+            "Battery Life": "Up to 16 hours"
+        },
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 4,
+        "product_title": "Lenovo ThinkPad X1 Carbon",
+        "product_image": "https://example.com/thinkpadx1carbon.jpg",
+        "category": "Laptop",
+        "price": 1499,
+        "description": "Business-class laptop with durable build quality.",
+        "specification": {
+            "Display": "14-inch FHD",
+            "Processor": "Intel Core i7",
+            "RAM": "16GB",
+            "Storage": "512GB SSD",
+            "Battery Life": "Up to 15 hours"
+        },
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 5,
+        "product_title": "ASUS ROG Zephyrus G14",
+        "product_image": "https://example.com/rogzephyrusg14.jpg",
+        "category": "Laptop",
+        "price": 1599,
+        "description": "Powerful gaming laptop with high refresh rate display.",
+        "specification": {
+            "Display": "14-inch QHD 120Hz",
+            "Processor": "AMD Ryzen 9",
+            "Graphics": "NVIDIA GeForce RTX 3060",
+            "RAM": "16GB",
+            "Storage": "1TB SSD"
+        },
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 6,
+        "product_title": "Acer Aspire 5",
+        "product_image": "https://example.com/aceraspire5.jpg",
+        "category": "Laptop",
+        "price": 549,
+        "description": "Budget-friendly laptop with decent specifications for everyday use.",
+        "specification": {
+            "Display": "15.6-inch FHD",
+            "Processor": "Intel Core i5",
+            "RAM": "8GB",
+            "Storage": "256GB SSD",
+            "Battery Life": "Up to 8 hours"
+        },
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": 7,
+        "product_title": "iPhone 14",
+        "product_image": "https://example.com/iphone14.jpg",
+        "category": "Phone",
+        "price": 799,
+        "description": "Apple's latest smartphone with advanced features and design.",
+        "specification": {
+            "Display": "6.1-inch Super Retina XDR",
+            "Processor": "A15 Bionic",
+            "Camera": "Dual 12MP",
+            "Battery Life": "Up to 20 hours",
+            "Connectivity": "5G ready"
+        },
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 8,
+        "product_title": "Samsung Galaxy S22",
+        "product_image": "https://example.com/galaxys22.jpg",
+        "category": "Phone",
+        "price": 849,
+        "description": "High-performance Android smartphone with excellent camera.",
+        "specification": {
+            "Display": "6.1-inch Dynamic AMOLED",
+            "Processor": "Exynos 2200",
+            "Camera": "Triple 50MP",
+            "Battery Life": "Up to 24 hours",
+            "Connectivity": "5G"
+        },
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 9,
+        "product_title": "Google Pixel 7",
+        "product_image": "https://example.com/pixel7.jpg",
+        "category": "Phone",
+        "price": 599,
+        "description": "Google's flagship smartphone with top-notch camera performance.",
+        "specification": {
+            "Display": "6.3-inch OLED",
+            "Processor": "Google Tensor",
+            "Camera": "Dual 50MP + 12MP",
+            "Battery Life": "Up to 24 hours",
+            "Connectivity": "5G"
+        },
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 10,
+        "product_title": "Apple Watch Series 8",
+        "product_image": "https://example.com/applewatchseries8.jpg",
+        "category": "Smartwatch",
+        "price": 399,
+        "description": "Smartwatch with advanced health tracking and durable design.",
+        "specification": {
+            "Display": "Always-On Retina",
+            "Health Monitoring": "Blood oxygen, ECG",
+            "Battery Life": "Up to 18 hours",
+            "Water Resistance": "50m"
+        },
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 11,
+        "product_title": "Samsung Galaxy Watch 5",
+        "product_image": "https://example.com/galaxywatch5.jpg",
+        "category": "Smartwatch",
+        "price": 279,
+        "description": "Smartwatch with comprehensive health and fitness tracking.",
+        "specification": {
+            "Display": "1.4-inch Super AMOLED",
+            "Health Monitoring": "Heart rate, sleep, body composition",
+            "Battery Life": "Up to 40 hours",
+            "Water Resistance": "5 ATM"
+        },
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 12,
+        "product_title": "Apple AirPods Pro",
+        "product_image": "https://example.com/airpodspro.jpg",
+        "category": "Earbuds",
+        "price": 249,
+        "description": "Noise-cancelling earbuds with immersive sound quality.",
+        "specification": {
+            "Battery Life": "4.5 hours listening time",
+            "Connectivity": "Bluetooth 5.0",
+            "Water Resistance": "IPX4",
+            "Charging Case": "Wireless charging case"
+        },
+        "availability": true,
+        "rating": 4.9
+    }
+]
