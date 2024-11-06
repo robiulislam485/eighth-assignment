@@ -5,6 +5,8 @@ import GadgetsCards from "../components/GadgetsCards/GadgetsCards";
 import Statistic from "../components/pages/Statistics/Statistic";
 import Dashboard from "../components/pages/Dashboard/Dashboard";
 import GadgetDetails from "../components/pages/GadgetDetails.jsx/GadgetDetails";
+import Cart from "../components/Cart/Cart";
+import Wishlist from "../components/Wishlist/Wishlist";
 // import Categories from "../components/Categories/Categories";
 
 const routes = createBrowserRouter([
@@ -35,7 +37,21 @@ const routes = createBrowserRouter([
       },
       {
         path: '/dashboard',
-        element: <Dashboard></Dashboard>
+        element: <Dashboard></Dashboard>,
+        children: [
+          {
+            path: '/dashboard/cart',
+            element: <Cart></Cart>
+          },
+          {
+            path: '/dashboard',
+            element: <Cart></Cart>
+          },
+          {
+            path: '/dashboard/wishlist',
+            element: <Wishlist></Wishlist>
+          },
+        ]
       },
       {
         path: '/gadget/:product_id',
