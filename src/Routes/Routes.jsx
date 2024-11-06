@@ -7,12 +7,14 @@ import Dashboard from "../components/pages/Dashboard/Dashboard";
 import GadgetDetails from "../components/pages/GadgetDetails.jsx/GadgetDetails";
 import Cart from "../components/Cart/Cart";
 import Wishlist from "../components/Wishlist/Wishlist";
-// import Categories from "../components/Categories/Categories";
+import ErrorPage from "../components/ErrorPage/ErrorPage";
+
 
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
@@ -33,7 +35,8 @@ const routes = createBrowserRouter([
       },
       {
         path: '/statistics',
-        element: <Statistic></Statistic>
+        element: <Statistic></Statistic>,
+        loader: () => fetch('../gadgets.json'),
       },
       {
         path: '/dashboard',

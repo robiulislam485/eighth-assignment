@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import Heading from '../../Heading/Heading';
-import { addGadget, getPreviousData } from '../../utility';
+import { addGadget } from '../../utility';
+import { getWishProduct, wishlistProduct } from '../../utility/utility';
+
 
 
 
@@ -9,27 +11,34 @@ const GadgetDetails = () => {
     const { product_id } = useParams();
     const allGadget = useLoaderData()
     const [gadget, setGadget] = useState([]);
+    const [enable, setEnable] = useState(false)
     useEffect(() => {
         const findGadget = allGadget.find(gadget => gadget.product_id === parseInt(product_id));
         setGadget(findGadget);
-    }, [allGadget, product_id])
-    const { product_image, product_title, price, availability, description, rating } = gadget;
-    const handleGadget = (gadget) => {
-     addGadget(gadget)
-    
-    }
-    const handleWishList = (gadget) => {
-     addGadget(gadget)
-    
-    }
+        const wishProduct = getWishProduct()
+        const isExist = wishProduct.find(item => item.product_id == findGadget.product_id)
+        if (isExist) {
+            setEnable(true)
+        }
 
+    }, [allGadget, product_id])
+    const { product_image, product_title, price, availability, description, rating,specification } = gadget;
+
+    const handleGadget = (gadget) => {
+        addGadget(gadget)
+
+    }
+    const handleWishList = (product) => {
+        wishlistProduct(product)
+        setEnable(true)
+    }
     return (
-        <div className='relative pb-40 mb-52'>
-            <div className='bg-[#9538E2] pb-60'>
+        <div className='pb-4 mb-5'>
+            <div className='bg-[#9538E2] p-6'>
                 <Heading title={'Product Details'} subtitle={'Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!'}></Heading>
             </div>
 
-            <div className='flex gap-10 items-center justify-center p-20 shadow-2xl rounded-md my-24 mx-40 absolute top-16 left-20'>
+            <div className='flex gap-10 items-center justify-center p-20 shadow-2xl rounded-md my-24 mx-40 '>
                 <div>
                     <img className='w-[400px]' src={product_image} alt="" />
                 </div>
@@ -41,8 +50,8 @@ const GadgetDetails = () => {
                     <p className='text-lg font-bold'>Specification:</p>
                     <p className='text-lg font-bold'>Rating: {rating}</p>
                     <div className='flex items-center gap-4'>
-                        <button onClick={() => handleGadget(gadget)} className='btn rounded-full bg-purple-800 text-white'>Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
-                        <button onClick={() => handleWishList(gadget)} className='btn rounded-full '><i class="fa-regular fa-heart"></i></button>
+                    <button onClick={() => handleGadget(gadget)} className='btn rounded-full bg-purple-800 text-white'>Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                    <button disabled={enable} onClick={() => handleWishList(gadget)} className='btn rounded-full border border-purple-800'><i class="fa-solid fa-heart"></i></button>
                     </div>
                 </div>
             </div>

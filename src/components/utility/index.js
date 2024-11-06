@@ -10,11 +10,6 @@ const getPreviousData = () => {
         return [];
     }
 }
-
-
-
-
-
 const addGadget = gadget => {
 
     const addGadget = getPreviousData();
